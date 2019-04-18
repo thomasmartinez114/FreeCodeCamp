@@ -1,3 +1,6 @@
+![](../logo/FreeCodeCamp_logo.png)
+
+
 April vacation FreeCodeCamp assignments:
 
 - Basic Data Structures
