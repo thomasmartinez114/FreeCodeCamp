@@ -1,12 +1,23 @@
 html, body {
     font-family: sans-serif;
     text-align: center;
+    height: 100%;
+  margin: 0;
+  padding: 0;
+  
+  min-width: 100%;
+  width: 100%;
+  max-width: 100%;
+  
+  min-height: 100%;
+  height: 100%;
+  max-height: 100%;
 }
 
-* {
+/* * {
     margin: 0;
     padding: 0;
-}
+} */
 
 @media only screen and (max-width: 500px) {
   nav ul {
@@ -21,9 +32,21 @@ html, body {
 }
 
 #welcome-section {
-    height: 100vh;
-    padding: 16px;
-    margin-top: 30px;
+    height: 100%;
+    width: 100%;
+  top: 0;
+  margin: 0;
+}
+
+.intro {
+    top: 0;
+  background: #e0ebe8;
+  min-height: 55vh;
+  padding-top: 45vh;
+  /*   line-height: 100vh; */
+  /*   width:100%;
+  height:96vh;
+border:solid; */
 }
 
 /*Fixed navbar*/
