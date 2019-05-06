@@ -1,0 +1,50 @@
+html, body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 500px) {
+  nav ul {
+    text-align: center;
+  }
+  nav ul li {
+    margin: 20px;
+  }
+  .project {
+    margin: 40px 0;
+  }
+}
+
+#welcome-section {
+    height: 100vh;
+}
+
+/*Fixed navbar*/
+nav {
+    overflow: hidden;
+    background-color: grey;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#welcome-section {
+    padding: 16px;
+    margin-top: 30px;
+    height: 1500px;
+}
