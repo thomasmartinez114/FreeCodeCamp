@@ -1,18 +1,18 @@
-// Sum All Numbers in a Range
-// We'll pass you an array of two numbers. Return the sum of those two numbers plus the sum of all the numbers between them.
-// The lowest number will not always come first.
-// Remember to use Read-Search-Ask if you get stuck. Try to pair program. Write your own code.
-
 function sumAll(arr) {
-  var countMax = Math.max(arr[0], arr[1]);
-  var countMin = Math.min(arr[0], arr[1]);
-  var count = 0;
+arr.sort(function(a, b){ return a -b })
 
-  for (var i = countMin; i <= countMax; i++){
-    count += i;
-  }
+// Find the numbers in between the two numbers in the arr
+console.log(arr)
 
-  return(count);
+var result = 0;
+for(var i = arr[0]; i <= arr[1]; i++){
+
+  result += i
 }
 
-sumAll([1, 4]);
+return result
+
+// Add all of the numbers together including the two numbers in arr
+}
+
+sumAll([1, 4])
