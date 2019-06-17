@@ -1,8 +1,11 @@
-// Factorialize a Number
-
-function factorialize(num){
-  if (num === 0) {return 1;}
-  return num * factorialize(num-1)
+function factorialize(num) {
+  var factorial = 1;
+  
+  for (var i = 1; i <= num; i++){
+      factorial = factorial * i;
+  }
+  
+  return factorial;
 }
 
 factorialize(5);
