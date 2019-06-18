@@ -1,11 +1,11 @@
 function factorialize(num) {
-  var factorial = 1;
+  var product = 1;
   
   for (var i = 1; i <= num; i++){
-      factorial = factorial * i;
+      product = product * i;
   }
   
-  return factorial;
+  return product;
 }
 
 factorialize(5);
