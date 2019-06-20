@@ -11,5 +11,3 @@ function convertToF(celsius) {
 }
 
 convertToF(30);
-
-// hi
