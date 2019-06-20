@@ -6,8 +6,10 @@
 // Don't worry too much about the function and return statements as they will be covered in future challenges. For now, only use operators that you have already learned.
 
 function convertToF(celsius) {
-  let fahrenheit = celsius*(9/5) + 32;
+  let fahrenheit = celsius * (9 / 5) + 32;
   return fahrenheit;
 }
 
 convertToF(30);
+
+// hi
