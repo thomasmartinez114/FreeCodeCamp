@@ -48,7 +48,7 @@ export default class CreateExercise extends Component {
 
   onChangeDate(e) {
     this.setState({
-      date: date
+      date: e.target.date
     });
   }
 
