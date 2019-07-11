@@ -46,9 +46,9 @@ export default class CreateExercise extends Component {
     });
   }
 
-  onChangeDate(e) {
+  onChangeDate(date) {
     this.setState({
-      date: e.target.date
+      date: date
     });
   }
 
