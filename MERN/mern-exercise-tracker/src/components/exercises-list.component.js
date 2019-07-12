@@ -26,6 +26,8 @@ export default class ExercisesList extends Component {
     axios
       .delete("http://localhost:5000/exercises/" + id)
       .then(res => console.log(res.data));
+
+    // filter will return elements if the element does not equal the element being deleted. So it will show undeleted ones
     this.setState({
       exercises: this.state.exercises.filter(el => el._id !== id)
     });
@@ -34,8 +36,23 @@ export default class ExercisesList extends Component {
   render() {
     return (
       <div>
-        <p>You are on the Exercise List component!</p>
-      </div>
+        <h3>Logged Exercises</h3>
+        <table className='table'>
+          <thead className="thead-lig">
+            <tr>
+              <th>Username</th>
+              <th>Description</th>
+              <th>Duration</th>
+              <th>Date</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            { this.exerciseList() }
+          </tbody>
+        </table>
+  </div>
+)
     );
   }
 }
