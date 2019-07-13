@@ -72,7 +72,7 @@ export default class ExercisesList extends Component {
         <table className="table">
           <thead className="thead-lig">
             <tr>
-              <th>Username</th>
+              <th>User Name</th>
               <th>Description</th>
               <th>Duration</th>
               <th>Date</th>
