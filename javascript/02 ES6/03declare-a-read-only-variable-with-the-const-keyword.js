@@ -10,4 +10,4 @@ function printManyTimes(str) {
 
   // change code above this line
 }
-printManyTimes('freeCodeCamp');
+printManyTimes('freeCodeCamP');
