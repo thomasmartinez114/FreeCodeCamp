@@ -4,14 +4,14 @@
 // Remember to use Read-Search-Ask if you get stuck. Write your own code.
 
 function truncateString(str, num) {
- // Clear out that junk in your trunk
+  // Clear out that junk in your trunk
 
- // use for loop..length and slice/or replace method?
-if (str.length > num) {
-str = str.slice(0, num)
-str = str + "...";
-}
- return str;
+  // use for loop..length and slice/or replace method?
+  if (str.length > num) {
+    str = str.slice(0, num);
+    str = str + '...';
+  }
+  return str;
 }
 
-truncateString("A-tisket a-tasket A green and yellow basket", 8);
+truncateString('A-tisket a-tasket A green and yellow basket', 8);
