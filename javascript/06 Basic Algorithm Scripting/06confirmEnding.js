@@ -1,17 +1,12 @@
-function confirmEnding(string, target) {
-  // Step 1. Use the substr method
-  if (string.substr(-target.length) === target) {
-    // What does "if (string.substr(-target.length) === target)" represents?
-    // The string is 'Bastian' and the target is 'n'
-    // target.length = 1 so -target.length = -1
-    // if ('Bastian'.substr(-1) === 'n')
-    // if ('n' === 'n')
+function confirmEnding(str, target) {
+  // "Never give up and good luck will find you."
+  // -- Falcor
 
-    // Step 2. Return a boolean (true or false)
+  if (str.slice(str.length - target.length) === target) {
     return true;
   } else {
     return false;
   }
 }
 
-confirmEnding("True", "e");
+confirmEnding('True', 'e');
