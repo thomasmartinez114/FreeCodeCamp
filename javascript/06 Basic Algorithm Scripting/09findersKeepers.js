@@ -1,14 +1,12 @@
 function findElement(arr, func) {
-  var num;
-
+  let num = 0;
   for (var i = 0; i < arr.length; i++) {
-    if (func(arr[i])) {
-      num = arr[i];
+    num = arr[i];
+    if (func(num)) {
       return num;
     }
   }
+  return undefined;
 }
 
-findElement([1, 2, 3, 4], function(num) {
-  return num % 2 === 0;
-});
+console.log(findElement([1, 2, 3, 4], num => num % 2 === 0));
