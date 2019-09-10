@@ -1,5 +1,5 @@
 function booWho(bool) {
-  return typeof bool === "boolean";
+  return typeof bool === 'boolean';
 }
 
 // test here
