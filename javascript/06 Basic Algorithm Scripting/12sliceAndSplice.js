@@ -1,6 +1,6 @@
 function frankenSplice(arr1, arr2, n) {
   // It's alive. It's alive!
-  var newArr = arr2.splice(0);
+  var newArr = arr2.slice();
   return newArr;
 }
 
