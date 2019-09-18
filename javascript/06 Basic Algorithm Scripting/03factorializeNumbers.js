@@ -13,15 +13,33 @@
 // Remember to use Read - Search - Ask if you get stuck.Write your own code.
 
 function factorialize(num) {
-  var sum;
+  var sum = 1;
 
   for (var i = 1; i <= num; i++) {
-    sum = num * i;
+    sum = sum * i;
   }
-  console.log(sum);
+  return sum;
+  //   console.log(sum);
 }
 
 factorialize(5);
-// factorialize(10);
-// factorialize(20);
-// factorialize(0);
+
+factorialize(5);
+factorialize(10);
+factorialize(20);
+factorialize(0);
+
+//////////////////
+// 1st attempt //
+/////////////////
+
+// function factorialize(num) {
+//   var sum;
+
+//   for (var i = 1; i <= num; i++) {
+//     sum = num * i;
+//   }
+//   console.log(sum);
+// }
+
+// factorialize(5);
