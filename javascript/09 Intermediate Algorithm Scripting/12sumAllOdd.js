@@ -8,12 +8,6 @@
 
 // Remember to use Read - Search - Ask if you get stuck.Try to pair program.Write your own code.
 
-function sumPrimes(num) {
-  if (num > 1) {
-    var sum = 0;
-
-    for (var i = 0; i < num.length; i++) {}
-  }
-}
-
-sumPrimes(10);
+do {
+  stuff;
+} while (something);
