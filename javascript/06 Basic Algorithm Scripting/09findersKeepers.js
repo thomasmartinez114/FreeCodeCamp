@@ -1,12 +1,17 @@
+
 function findElement(arr, func) {
   let num = 0;
+  // return num;
+
   for (var i = 0; i < arr.length; i++) {
-    num = arr[i];
-    if (func(num)) {
-      return num;
+    console.log(arr[i]) // log the elements
+    if (arr[i] % 2 === 0) {
+      console.log(`The arr[i] that passed is ${arr[i]}`);
+      return arr[i];
+      break;
     }
   }
-  return undefined;
+  console.log("the num is: " + num);
 }
 
-console.log(findElement([1, 2, 3, 4], num => num % 2 === 0));
+findElement([1, 2, 3, 4], num => num % 2 === 0);

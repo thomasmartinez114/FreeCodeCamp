@@ -16,12 +16,13 @@ function factorialize(num) {
   var sum = 1;
 
   for (var i = 1; i <= num; i++) {
-    sum = sum * i;
+    sum *= i;
   }
+  //console.log(sum)
   return sum;
-  //   console.log(sum);
 }
 
+factorialize(5);
 factorialize(5);
 
 factorialize(5);

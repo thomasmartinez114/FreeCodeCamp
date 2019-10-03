@@ -1,13 +1,16 @@
 function frankenSplice(arr1, arr2, n) {
   // It's alive. It's alive!
-  var newArr = arr2.slice();
+  var copyArr1 = arr1.slice(0);
+  var copyArr2 = arr2.slice(0);
+  console.log("Arr1: " + copyArr1);
+  console.log("Arr2: " + copyArr2);
 
-  for (var i = 0; i < arr1.length; i++) {
-    newArr.splice(n, 0, arr1[i]);
-    n++;
+  for (var i = 0; i < copyArr1.length; i++) {
+    copyArr2.splice(n, 0, copyArr1[i]);
+    n++; // increment index position to place the element in proper index
   }
-
-  return newArr;
+  console.log(copyArr2);
+  return copyArr2;
 }
 
-console.log(frankenSplice([1, 2, 3], [4, 5, 6], 1));
+frankenSplice([1, 2, 3], [4, 5, 6], 1);

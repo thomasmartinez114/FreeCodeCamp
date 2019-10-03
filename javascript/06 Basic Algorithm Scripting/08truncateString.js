@@ -4,14 +4,22 @@
 // Remember to use Read-Search-Ask if you get stuck. Write your own code.
 
 function truncateString(str, num) {
-  // Clear out that junk in your trunk
+  // v1.0 below
 
-  // use for loop..length and slice/or replace method?
+  // var eachLetter = str.slice(0, num);
+  // console.log("Word: " + eachLetter); // log out the letters by what num - 1 is
+  // var newStr = eachLetter + '...';
+  // console.log(`The truncated by number ${num} is now "${newStr}"`); // log what the words would be with '...' added
+  // return newStr;
+
+  // v2.0 below
+
   if (str.length > num) {
-    str = str.slice(0, num);
-    str = str + '...';
+    return str.slice(0, num) + "...";
   }
-  return str;
+  return str
 }
 
 truncateString('A-tisket a-tasket A green and yellow basket', 8);
+truncateString("Peter Piper picked a peck of pickled peppers", 11)
+//truncateString("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length
