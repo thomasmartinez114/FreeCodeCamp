@@ -1,44 +1,42 @@
-function titleCase(str) {
-  var words = str.split(' ');
-  // console.log(words); // showing words split
-  var newWords = [];
+// Notes
+// return a string with title casing, rest letters lowercase
+// cap the words like "the"
 
-  for (var i = 0; i < words.length; i++) {
-    var capWords = words[i].charAt(0).toUpperCase() + words[i].slice(1);
-    // console.log(capWords);
-    newWords.push(capWords);
-    // console.log(newWords);
+// Pseudo code
+// lowercase all into an arrary
+// take the first letter of each and cap
+
+//////////////////
+//  Corrected   //
+//////////////////
+
+function titleCase(str) {
+  let words = str.toLowerCase().split(' ');
+  console.log(words);
+
+  for (let i = 0; i < words.length; i++) {
+    words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+    console.log(words);
   }
-  var wordsFinal = newWords.join(' ');
-  console.log(wordsFinal);
-  return wordsFinal;
+  console.log(words.join(' '));
+  return words.join(' ');
 }
 
 titleCase("I'm a little tea pot");
 
-// https://flaviocopes.com/how-to-uppercase-first-letter-javascript/
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase
-// https://flaviocopes.com/how-to-uppercase-first-letter-javascript/
+//////////////////////
+//  First Attempt   //
+//////////////////////
 
-// \\\\\\\\\\\\\\\\\
-// \\ This works  \\
-// \\\\\\\\\\\\\\\\\
+// function titleCase(sentence) {
+//     let newSent = sentence.toLowerCase();
+//     let words = newSent.split(' '); // splits by space aka each word and places into an array
 
-
-// function titleCase(str) {
-//   str = str.toLowerCase();
-//   console.log(str);
-
-//   var newWords = str.split(' ');
-//   console.log(newWords);
-
-//   for (var i = 0; i < newWords.length; i++) {
-//     newWords[i] = newWords[i].charAt(0).toUpperCase() + newWords[i].slice(1);
-//     console.log(newWords[i])
-//   }
-//   str = newWords.join(' ');
-//   console.log(str);
-//   return str;
+//     for (let letters = 0; letters < words.length; letters++) {
+//         wordsCap = words[letters].charAt(0).toUpperCase() + words[letters].slice(1); // cap first letter with charAt(0) then add with rest of letters after char 0
+//     }
+//     console.log(wordsCap);
+//     return wordsCap;
 // }
 
 // titleCase("I'm a little tea pot");
