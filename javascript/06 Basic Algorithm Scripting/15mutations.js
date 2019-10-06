@@ -10,4 +10,4 @@ function mutation(arr) {
 
 console.log(mutation(['hello', 'hey']));
 
-// use current.indexOf(elem[i]) == to other element
+// The indexOf() method returns the index within the calling String object of the first occurrence of the specified value, starting the search at fromIndex.Returns - 1 if the value is not found.
